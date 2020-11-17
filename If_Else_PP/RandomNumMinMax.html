@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let nums = [];
+        nums[0] = parseInt(prompt("Enter 1st Number"));
+        nums[1] = parseInt(prompt("Enter 2nd Number"));
+        nums[2] = parseInt(prompt("Enter 3rd Number"));
+        nums[3] = parseInt(prompt("Enter 4th Number"));
+        nums[4] = parseInt(prompt("Enter 5th Number"));
+        
+        let min = nums[0];
+        let max = nums[0];
+
+        for(let n of nums)
+        {
+            if(n<min)
+                min=n;
+            if(n>max)
+                max=n;
+        }
+        alert("Minimum Number "+min);
+        alert("Maximum Number "+max);
+        
+    </script>
+</html>
