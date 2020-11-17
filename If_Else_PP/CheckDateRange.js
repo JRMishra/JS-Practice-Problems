@@ -1,4 +1,3 @@
-const { RSA_X931_PADDING } = require("constants");
 const readline = require("readline");
 
 const read = readline.createInterface({
@@ -29,7 +28,6 @@ read.question("Enter full date to check ? ", function(fullDate) {
 });
 
 read.on("close", function() {
-    console.log("\nBYE BYE....");
+    console.log("Exiting...");
     process.exit(0);
 });
-
