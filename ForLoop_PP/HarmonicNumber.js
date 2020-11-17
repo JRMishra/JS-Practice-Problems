@@ -5,15 +5,14 @@ const read = readline.createInterface({
     output: process.stdout
 });
 
-read.question("Enter N : ", function(numStr) {
-    let num = parseInt(numStr);
-    let i;
-    console.log("n","\t"+"2^n");
-    console.log("------------");
-    for(i=0; i<=num; i++)
+read.question("Enter N : ", function(num) {
+    let i,ans=0.0;
+    console.log("Nth Harmonic Number");
+    for(i=1; i<=num; i++)
     {
-        console.log(i+"\t"+Math.pow(2,i));
+        ans+=(1/i);
     }
+    console.log(ans);
     read.close();
 });
 
