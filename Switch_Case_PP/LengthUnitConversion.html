@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        option = prompt("1 : Feet to Inch\n"+
+            "2 : Feet to Meter\n"+
+            "3 : Inch to Feet\n"+
+            "4 : Meter to Feet\n"+
+            "Enter : ");
+            let inputLen, outputLen;
+        switch(option)
+        {
+            case "1":
+                inputLen = parseFloat(prompt("Enter length in feet"));
+                outputLen = inputLen*12;
+                alert(inputLen+" feet = "+outputLen+" inch"); 
+                break;
+            case "2":
+                inputLen = parseFloat(prompt("Enter length in feet"));
+                outputLen = inputLen*0.3048;
+                alert(inputLen+" feet = "+outputLen+" meter"); 
+                break;
+            case "3":
+                inputLen = parseFloat(prompt("Enter length in inch"));
+                outputLen = inputLen/12;
+                alert(inputLen+" inch = "+outputLen+" feet"); 
+                break;
+            case "4":
+                inputLen = parseFloat(prompt("Enter length in meter"));
+                outputLen = inputLen/0.3048;
+                alert(inputLen+" meter = "+outputLen+" feet"); 
+                break;
+            default:
+                alert("Wrong option");
+                break;
+        }
+    </script>
+</html>
