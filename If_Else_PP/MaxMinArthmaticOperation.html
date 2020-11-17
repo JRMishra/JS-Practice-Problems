@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let numArr = [];
+        numArr[0] = parseInt(prompt("1st number"));
+        numArr[1] = parseInt(prompt("2nd number"));
+        numArr[2] = parseInt(prompt("3rd number"));
+       
+        if(isNaN(numArr[0]) || isNaN(numArr[1]) || isNaN(numArr[2]))
+            alert("Non numerical entry");
+        else
+        {
+            let exp1 = numArr[0]+numArr[1]*numArr[2];
+            let exp2 = numArr[0]%numArr[1]+numArr[2];
+            let exp3 = numArr[2]+numArr[0]/numArr[1];
+            let exp4 = numArr[0]*numArr[1]+numArr[2];
+
+            
+            let max = Math.max(exp1,exp2,exp3,exp4);
+            if(exp1 == max)
+                alert("Expression : a+b*c \nMax Value : "+exp1);
+            else if(exp2 == max)
+                alert("Expression : a%b+c \nMax Value : "+exp2);
+            else if(exp3 == max)
+                alert("Expression : c+a/b \nMax Value : "+exp3);
+            else
+                alert("Expression : a*b+c \nMax Value : "+exp4); 
+            
+            let min = Math.min(exp1,exp2,exp3,exp4);
+            if(exp1 == min)
+                alert("Expression : a+b*c \nMin Value : "+exp1);
+            else if(exp2 == min)
+                alert("Expression : a%b+c \nMin Value : "+exp2);
+            else if(exp3 == min)
+                alert("Expression : c+a/b \nMin Value : "+exp3);
+            else
+                alert("Expression : a*b+c \nMin Value : "+exp4);     
+        } 
+    </script>
+</html>
