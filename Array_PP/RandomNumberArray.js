@@ -22,3 +22,18 @@ console.log("2nd Minimum : "+secondMin);
 
 console.log("Maximum : "+max);
 console.log("2nd Maximum : "+secondMax);
+
+console.log("After sorting");
+console.log("-----------------");
+randNumArr.sort();
+console.log("Random Numbers :");
+for(let i=0; i<10; i++)
+{
+    console.log(randNumArr[i]);
+}
+
+console.log("Minimum : "+randNumArr[0]);
+console.log("2nd Minimum : "+randNumArr[1]);
+
+console.log("Maximum : "+randNumArr[9]);
+console.log("2nd Maximum : "+randNumArr[8]);
